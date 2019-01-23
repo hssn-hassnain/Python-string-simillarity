@@ -46,4 +46,7 @@ String Similarity
 
 9- export the string similarity file in CSV format
 
-   df.to_csv('String_similarity.csv')                
+   df.to_csv('String_similarity.csv')
+
+GitHub directory
+https://github.com/hssn-hassnain/Python-string-simillarity.git                
