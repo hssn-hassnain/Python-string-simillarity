@@ -6,6 +6,7 @@ String Similarity
 -Install Levenshtein libraray
 
 *Steps to string similarity.
+
 1- In JupyterLab Import Pandas data frame
    import pandas as pd
 
@@ -25,7 +26,7 @@ String Similarity
    df.head()
 
 7- Check the similarity.
-   # df['similarity'] = df.apply(lambda x : Levenshtein.distance(df['description_x'], df['description_y']), axis=1)
+    df['similarity'] = df.apply(lambda x : Levenshtein.distance(df['description_x'], df['description_y']), axis=1)
    similarity = []
    for i in range(df.shape[0]):
    similarity.append(1/(1+Levenshtein.distance(df['description_x'][i], df['description_y'][i])))
